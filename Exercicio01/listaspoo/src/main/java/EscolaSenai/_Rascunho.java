@@ -4,10 +4,10 @@ public class _Rascunho {
     
     //(×)ALUNO 
     //(×)DISCIPLINA
-    //()FUNCIONARIO
+    //(×)FUNCIONARIO
     //()NOTAS
     //(×)PESSOA
-    //()PROFESSOR
+    //(×)PROFESSOR
     
 //Classe do tipo (){}
 
