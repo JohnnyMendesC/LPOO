@@ -1,7 +1,7 @@
 package com.trabalhospoo.listaspoo;
 
-public class FuncProfessor implements Login {
-    
+public class FuncProfessor/* implements Login*/ {
+    /*
     @Override
     public boolean controleDeAcesso(String login, String senha) {
         if(login.equals(getLogin()) && senha.equals(getSenha())){
@@ -12,7 +12,6 @@ public class FuncProfessor implements Login {
         }
         DADOS INCORRETOS
         contadortentativas++
-        return false;
     }
-
+    return false;*/
 }

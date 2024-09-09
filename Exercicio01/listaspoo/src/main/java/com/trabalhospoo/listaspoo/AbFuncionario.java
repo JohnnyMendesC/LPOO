@@ -1,7 +1,7 @@
 package com.trabalhospoo.listaspoo;
 
-public abstract class AbFuncionario extends Pessoa {
-
+public abstract class AbFuncionario /*extends Pessoa*/ {
+/*
 funcionario é uma Pessoa
 
 professor                   é um funcionario    da
@@ -14,4 +14,4 @@ atendente/secretario        é um funcionario    da secretaria
 direçao
 secretaria
 //
-}
+*/}

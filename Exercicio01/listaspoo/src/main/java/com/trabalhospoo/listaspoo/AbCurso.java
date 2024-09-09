@@ -1,6 +1,6 @@
 package com.trabalhospoo.listaspoo;
-
 public abstract class AbCurso {
+    /*
     um curso tem varias disciplinas
     a disciplina é de um curso
     /*
