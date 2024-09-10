@@ -1,5 +1,7 @@
 package EscolaSenai;
 
+import java.time.LocalDate;
+
 public abstract class Pessoa { //Classe base para criação de cada usuário Pessoa no sistema
 // •--==> ATRITUBTOS
 private int id=0; public static int contadorId = 1;
@@ -8,7 +10,42 @@ private String nome;
 
 private String cpf;
 
-private String dataNascimento;
+private EnumEstadoCivil estadoCivil;
+
+private Endereco endereco;
+
+private LocalDate dataNascimento; //no localdate ou alguma biblioteca ou no proprio construtor no maximo 120 anos pra tras para evitar erros de digitação
+//LocalDate
+
+
+public LocalDate getDataNascimento() {
+    return dataNascimento;
+}
+
+
+public void setDataNascimento(LocalDate dataNascimento) {
+    this.dataNascimento = dataNascimento;
+}
+
+
+public Endereco getEndereco() {
+    return endereco;
+}
+
+
+public void setEndereco(Endereco endereco) {
+    this.endereco = endereco;
+}
+
+
+public EnumEstadoCivil getEstadoCivil() {
+    return estadoCivil;
+}
+
+
+public void setEstadoCivil(EnumEstadoCivil estadoCivil) {
+    this.estadoCivil = estadoCivil;
+}
 
 private String email;
 
@@ -67,7 +104,7 @@ public String getCpf() {
 public void setCpf(String cpf) {
     this.cpf = cpf;
 }
-
+/*
 public String getDataNascimento() {
     return dataNascimento;
 }
@@ -75,7 +112,7 @@ public String getDataNascimento() {
 public void setDataNascimento(String dataNascimento) {
     this.dataNascimento = dataNascimento;
 }
-
+*/
 public String getEmail() {
     return email;
 }

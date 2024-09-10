@@ -1,27 +1,39 @@
 package EscolaSenai;
+//import java.util.ArrayList;
+//import java.util.List;
 
 public class Aluno extends Pessoa{ //Classe base dos alunos da instituição
 
 // •--==> ATRITUBTOS
+
+
+
+
 private int alunoId=0;
 private String alunoMatricula; //Primary Key
-private String alunoDataAdmissao;
-private String alunoStatus; //ativo, trancado, suspenso, concluído
+//private LocalDate alunoDataAdmissao; //localdate
+private String alunoStatus; //ENUM --> ativo, trancado, suspenso, concluído
+//private Endereco endereco; //enum no endereço
 
 // •--==> CONSTRUTOR
 public Aluno(String nomeAl){        
     this.setId(alunoId);
     this.alunoMatricula=("A-"+this.getId());
-    this.alunoDataAdmissao="Setembro";
+    //this.alunoDataAdmissao="Setembro"; //localdate
     this.alunoStatus="Ativo";
     this.setNome(nomeAl);
-    this.setDataNascimento("2007");
+    //this.setDataNascimento(LocalDate.now()); //localdate tem calculo de idade
     this.setEmail("SenaiEscola."+nomeAl+"."+this.getAlunoMatricula()+".alunos@senai.com");
     this.setSenha(this.alunoMatricula);
+    //listaDeAlunos.add(this.alunoLista);
 
+    //listaDeAlunos.add(arrayAluno);
+    
 }
 
 // •--==> METODOS
+//rodar um for para buscar o login senha e retornar true false
+//conversão date
 @Override
 public void imprimePessoa(){ //Metodo da Superclasse Pessoa ele liga o extends Pessoa no aluno
     //Dados da Pessoa
@@ -30,24 +42,27 @@ public void imprimePessoa(){ //Metodo da Superclasse Pessoa ele liga o extends P
     System.out.println("•====================•");
     System.out.println("Id:"+getId());
     System.out.println("Nome: "+getNome());
-    System.out.println("Data Nascimento: "+getDataNascimento());
+    //System.out.println("Data Nascimento: "+getDataNascimento());
     System.out.println("Email: "+getEmail());
     System.out.println("Senha: "+getSenha());//temporario para debug
-
+    
     //Dados de Aluno
     System.out.println("Matricula: "+getAlunoMatricula());
-    System.out.println("Data da Admissao: "+getAlunoDataAdmissao());
+    //System.out.println("Data da Admissao: "+getAlunoDataAdmissao());
     System.out.println("Situação: "+getAlunoStatus());
     System.out.println("•====================•");
     
 }
 
 // •--==> GETTERs SETTERs
+
+
+
 public String getAlunoMatricula() {
     return alunoMatricula;
 }
 
-
+/*
 public String getAlunoDataAdmissao() {
     return alunoDataAdmissao;
 }
@@ -55,7 +70,7 @@ public String getAlunoDataAdmissao() {
 public void setAlunoDataAdmissao(String alunoDataAdmissao) {
     this.alunoDataAdmissao = alunoDataAdmissao;
 }
-
+*/
 public String getAlunoStatus() {
     return alunoStatus;
 }
