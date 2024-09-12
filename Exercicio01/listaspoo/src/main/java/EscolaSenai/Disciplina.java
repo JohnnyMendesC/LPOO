@@ -6,12 +6,12 @@ public class Disciplina {//Classe base das Disciplinas Lecionadas pelos professo
     private String disciplinaId; 
     private String disciplinaCurso;
     private String disciplinaNome;
-    private EnumTurno disciplinaTurno; //ENUM
-    private String disciplinaInicio; //localdate
+    private String disciplinaTurno;
+    private String disciplinaInicio;
     private String disciplinaFinal;
 
     // •--==> CONSTRUTOR
-    public Disciplina(String disciplinaCurso, String dNome, EnumTurno dTurno, String dInicio, String dFinal){
+    public Disciplina(String disciplinaCurso, String dNome, String dTurno, String dInicio, String dFinal){
         this.disciplinaId = (disciplinaCurso+"."+getIdDisciplinaContador()+"-"+dNome);
         idDisciplinaContador++;
         this.disciplinaCurso=disciplinaCurso;
@@ -28,7 +28,7 @@ public class Disciplina {//Classe base das Disciplinas Lecionadas pelos professo
         System.out.println("Id da Disciplina:"+getDisciplinaId());
         System.out.println("Curso: "+getDisciplinaCurso());
         System.out.println("Nome: "+getDisciplinaNome());
-        System.out.println("Turno: "+getDisciplinaTurno().getEscolhaTurnoEnum());
+        System.out.println("Turno: "+getDisciplinaTurno());
         System.out.println("Inicio das aulas: "+getDisciplinaInicio());
         System.out.println("Término das aulas: "+getDisciplinaFinal());
         System.out.println("•====================•");
@@ -63,11 +63,11 @@ public class Disciplina {//Classe base das Disciplinas Lecionadas pelos professo
         this.disciplinaNome = disciplinaNome;
     }
 
-    public EnumTurno getDisciplinaTurno() {
+    public String getDisciplinaTurno() {
         return disciplinaTurno;
     }
 
-    public void setDisciplinaTurno(EnumTurno disciplinaTurno) {
+    public void setDisciplinaTurno(String disciplinaTurno) {
         this.disciplinaTurno = disciplinaTurno;
     }
 

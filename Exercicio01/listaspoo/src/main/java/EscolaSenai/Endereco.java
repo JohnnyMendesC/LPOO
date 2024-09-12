@@ -1,5 +1,7 @@
 package EscolaSenai;
+
 public class Endereco {
+
     //ATRIBUTOS
     public static int contadorid = 8800; 
 
@@ -9,7 +11,7 @@ public class Endereco {
     private String complemento;
     private String bairro;
     private String cidade;
-    private UnidadeFederal estado;
+    private EnumUnidadeFederal estado;
     private String cep;
     
     //CONSTRUTOR
@@ -17,7 +19,7 @@ public class Endereco {
         
     
 
-    public Endereco(String log, String num, String comp, String bai, String cid, UnidadeFederal est, String cep){
+    public Endereco(String log, String num, String comp, String bai, String cid, EnumUnidadeFederal est, String cep){
         this.id = contadorid; contadorid++;
         this.logradouro = log;
         this.numero = num;
@@ -27,6 +29,8 @@ public class Endereco {
         this.estado = est;
         this.cep = cep;
     }
+        
+
     
     //METODO
     public void imprimeEndereco(){
@@ -99,11 +103,11 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public UnidadeFederal getEstado() {
+    public EnumUnidadeFederal getEstado() {
         return estado;
     }
 
-    public void setEstado(UnidadeFederal estado) {
+    public void setEstado(EnumUnidadeFederal estado) {
         this.estado = estado;
     }
 

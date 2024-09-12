@@ -1,6 +1,7 @@
 package EscolaSenai;
 
 public enum EnumTurno {
+
     MANHA("Manhã"),
     TARDE("Tarde"),
     NOITE("Noite"),
@@ -18,4 +19,5 @@ public enum EnumTurno {
     public String getEscolhaTurnoEnum() {
         return escolhaTurnoEnum;
     }
+
 }

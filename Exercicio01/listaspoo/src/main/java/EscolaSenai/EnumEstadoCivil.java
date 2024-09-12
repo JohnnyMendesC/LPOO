@@ -1,17 +1,17 @@
 package EscolaSenai;
 
-public enum EnumEstadoCivil {
-    CASADO("Casado(a)"), 
-    SOLTEIRO("Solteiro(a)"), 
-    DIVORCIADO("Divorciado(a)"), 
-    SEPARADO("Separado(a)"),
-    VIUVO("Viuvo(a)");
 
-    //ATRIBUTO
+
+public enum EnumEstadoCivil {
+
+    CASADO("Casado(a)"),
+    SOLTEIRO("Solteiro(a)"),
+    SEPARADO("Separado(a)"),
+    DIVORCIADO("Diovorciado(a)"),
+    VIUVO("Viuvo(a)");
+    
     private final String estadoCivil;
-    
-    
-    //CONSTRUTOR
+
     EnumEstadoCivil(String escolhaEstCivil){
         this.estadoCivil = escolhaEstCivil;
     }
@@ -21,4 +21,5 @@ public enum EnumEstadoCivil {
     public String getEnumEstadoCivil() {
         return estadoCivil;
     }
+
 }
