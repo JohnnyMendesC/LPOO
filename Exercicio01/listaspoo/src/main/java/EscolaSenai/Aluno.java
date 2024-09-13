@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Aluno extends Pessoa { // Classe base dos alunos da instituição
+public class Aluno extends Pessoa{ // Classe base dos alunos da instituição
     // Criando lista para guardar cada aluno
     public static List<Aluno> listaDeAlunos = new ArrayList<Aluno>();
 
@@ -57,6 +57,10 @@ public class Aluno extends Pessoa { // Classe base dos alunos da instituição
         // System.out.println("Data da Admissao: "+getAlunoDataAdmissao());
         System.out.println("Situação: " + getAlunoStatus());
         System.out.println("•====================•");
+    }
+    //metodo login aluno
+    public void login(){
+        Menu.menuAluno();
     }
 
     // Metodo para ser chamado no MENU para cadastrar aluno
@@ -140,8 +144,9 @@ public class Aluno extends Pessoa { // Classe base dos alunos da instituição
             System.out.println("Escolha o número do item que deseja atualizar:");
             for (int i = 0; i < listaDeAlunos.size(); i++) {
                 System.out.println((i + 1) + " - Nome: " + listaDeAlunos.get(i).getNome() + " - Matrícula: "
-                        + listaDeAlunos.get(i).getAlunoMatricula() +
-                        " - CPF: " + listaDeAlunos.get(i).getCpf() + " - E-mail: " + listaDeAlunos.get(i).getEmail());
+                        + listaDeAlunos.get(i).getAlunoMatricula() + " - CPF: " + listaDeAlunos.get(i).getCpf()
+                        + " - E-mail: " + listaDeAlunos.get(i).getEmail() + " - Senha: "
+                        + listaDeAlunos.get(i).getSenha());
             }
             int itemAtualizar = sc.nextInt() - 1;
             for (int i = 0; i < listaDeAlunos.size(); i++) {
@@ -167,7 +172,7 @@ public class Aluno extends Pessoa { // Classe base dos alunos da instituição
                     if (atualizado == 4) {
                         System.out.print("Nova senha: ");
                         senhaAtt = at.nextLine();
-                        listaDeAlunos.get(i).setSenha(senhaAtt);
+                        listaDeAlunos.get(i).setSenhaNova(senhaAtt);
                     }
                 }
 
@@ -226,4 +231,5 @@ public class Aluno extends Pessoa { // Classe base dos alunos da instituição
     public void setAlunoStatus(EnumStatusMatricula alunoStatus) {
         this.alunoStatus = alunoStatus;
     }
+
 }
