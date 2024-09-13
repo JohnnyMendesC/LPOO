@@ -3,8 +3,7 @@ package EscolaSenai;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-public class Menu {
-	
+public class Menu {	
 	//•> Menu de acesso as informações de Alunos:
 	//	public static void menuAluno(){
 		public static void menuInicial() throws InputMismatchException{
@@ -14,6 +13,10 @@ public class Menu {
 			System.out.println("O que deseja fazer?");
 			System.out.println("1 - Menu Aluno");
 			System.out.println("2 - Menu Professor");
+			System.out.println("3 - Menu Notas");
+			System.out.println("9 - Aluno Notas");
+			//-Digite a maáteria que quer visualizar
+				//imprimeBoletim
 			System.out.println("0 - Sair");
 			Scanner sc = new Scanner(System.in);
 

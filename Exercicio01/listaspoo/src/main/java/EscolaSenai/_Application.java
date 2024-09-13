@@ -49,14 +49,18 @@ public class _Application {
         
         (x)•-> Classe Menu
         
-        ()•-> Tratar possíveis Exceptions
+        (x)•-> Tratar possíveis Exceptions
         
         (x)•-> Adicionar MENU 
+        
+        ( )•-> Implementar sistema de notas
+
+        ( )•-> Implementar Login(saber se foi professor ou aluno)
 
         a main fica só com o comando chamando por exemplo Exercicio.resolucao();
         */
 
-        
+        /*
         
         
         //DISCIPLINA
@@ -133,6 +137,6 @@ public class _Application {
         nota3.imprimeBoletim();
         nota4.imprimeBoletim();
         nota5.imprimeBoletim();
-        
+        */
 	}
 }
