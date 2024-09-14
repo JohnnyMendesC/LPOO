@@ -56,7 +56,7 @@ public class Disciplina {// Classe base das Disciplinas Lecionadas pelos Discipl
                 System.out.println(
                         (i + 1) + " - Nome: - " + Disciplina.listaDeDisciplinasDaEscola.get(i).getDisciplinaNome() +
                                 " - Curso: - " + Disciplina.listaDeDisciplinasDaEscola.get(i).getDisciplinaCurso()
-                                + " - Turno: " + listaDeDisciplinasDaEscola.get(i).getDisciplinaTurno());
+                                + " - Turno: " + Disciplina.listaDeDisciplinasDaEscola.get(i).getDisciplinaTurno());
             }
         } else {
             System.out.println("Não há disciplinas cadastradas.\n\n");

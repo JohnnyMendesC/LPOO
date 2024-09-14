@@ -28,9 +28,23 @@ public class Professor extends Funcionario {
         this.setOcupacaoPessoa(EnumOcupacao.PROF);
     }
 
+    public static void imprimeListaDeFuncionarios() {
+        if (!Funcionario.listaDeFuncionariosDaEscola.isEmpty()) {
+            System.out.println("Lista de funcionários:");
+            for (int i = 0; i < Funcionario.listaDeFuncionariosDaEscola.size(); i++) {
+                System.out.println(
+                        (i + 1) + " - " + Funcionario.listaDeFuncionariosDaEscola.get(i).getNome() + " | Status: "
+                                + Funcionario.listaDeFuncionariosDaEscola.get(i).getFuncStatus().getEnumStatMat()+" | Email: "+
+                                Funcionario.listaDeFuncionariosDaEscola.get(i).getEmail()+" | Senha: "+Funcionario.listaDeFuncionariosDaEscola.get(i).getSenha());
+            }
+        } else {
+            System.out.println("Não há funcionários cadastrados.\n\n");
+        }
+    }
+
     //metodo login professor
     public void login(){
-        Menu.menuProf();
+        Menu.menuInicial();
     }
 
     // Metodo para ser chamado no MENU para cadastrar professor
@@ -39,8 +53,8 @@ public class Professor extends Funcionario {
         System.out.print("Nome: ");
         Scanner sc = new Scanner(System.in);
         String nome = sc.nextLine();
-        Funcionario professor = new Professor(nome);
-        Funcionario.listaDeFuncionariosDaEscola.add(professor);
+        Professor professor = new Professor(nome);
+        Professor.listaDeFuncionariosDaEscola.add(professor);
         System.out.println("\n");
     }
 

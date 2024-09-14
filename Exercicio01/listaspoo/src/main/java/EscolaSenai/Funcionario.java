@@ -12,7 +12,7 @@ import lombok.Setter;
 public abstract class Funcionario extends Pessoa {
     // o que é do funcionario? precisaria saber quem são os funcionários da escola
     // •--==> ATRITUBTOS
-    public static List<Funcionario> listaDeFuncionariosDaEscola = new ArrayList<Funcionario>();
+    public static List<Professor> listaDeFuncionariosDaEscola = new ArrayList<Professor>();
 
     private LocalDate funcDataContratacao;
     private EnumStatusMatricula funcStatus;// Ativo, Afastado/Inativo, Férias

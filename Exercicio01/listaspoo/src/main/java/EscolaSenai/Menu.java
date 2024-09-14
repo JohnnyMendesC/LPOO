@@ -10,13 +10,13 @@ public class Menu {
 	public static void menuInicial() throws InputMismatchException {
 		int opcao = 8888;
 		do {
+			System.out.println("\nOlá " + _Application.usuarioLogado.getNome());
 			System.out.println("\n- MENU INICIAL -");
 			System.out.println("O que deseja fazer?");
 			System.out.println("1 - Menu Aluno");
 			System.out.println("2 - Menu Professor");
 			System.out.println("3 - Menu Notas");
 			System.out.println("4 - Menu Disciplinas");
-			System.out.println("9 - Aluno Notas");
 			// -Digite a maáteria que quer visualizar
 			// imprimeBoletim
 			System.out.println("0 - Sair");
@@ -62,7 +62,6 @@ public class Menu {
 		int opcao = 8888;
 		do {
 
-			System.out.println("\nOlá "+_Application.usuarioLogado.getNome());
 			System.out.println("\n- MENU -");
 			System.out.println("O que deseja fazer?");
 			System.out.println("1 - Cadastrar novo Professores(as): ");
@@ -184,10 +183,9 @@ public class Menu {
 			System.out.println("\n- MENU -");
 			System.out.println("O que deseja fazer?");
 			System.out.println("1 - Cadastrar nova Nota");
-			System.out.println("2 - Atualizar Nota");
-
-			System.out.println("3 - Deletar Nota");
-			System.out.println("4 - Listar Nota");
+			System.out.println("2 - Aplicar Nota da Prova");
+			System.out.println("3 - Ver nota da Prova");
+			System.out.println("4 - Listar Boletins");
 			System.out.println("5 - Voltar Menu");
 			System.out.println("0 - Sair\n");
 			System.out.print("Digite uma opção: ");
@@ -198,25 +196,22 @@ public class Menu {
 				System.out.println("\n");
 				switch (opcao) {
 					case 1:
-						// Notas.cadastrarNotas();
+						Notas.cadastrarNotas();
 						break;
 					case 2:
 						// Atualizar Aluno
-						System.out.println("Atualizando Nota...");
-						// Notas.atualizarNotas();
+						System.out.println("Aplicar Nota da Prova");
+						Notas.fazerProva();
 						break;
 					case 3:
 						// Deletar Aluno
-						System.out.println("Deletando Nota...");
-						// Notas.deletarNotas();
+						System.out.println("Ver nota da Prova");
+						Notas.imprimeBoletimDeNotas();
 						break;
 					case 4:
-						// Notas.imprimeNotasDetalhes();
+						Notas.imprimeListaDeNotas();
 						break;
 					case 5:
-						// Notas.aplicarAvaliacao();
-						break;
-					case 6:
 						Menu.menuInicial();
 						break;
 					case 0:
@@ -293,5 +288,7 @@ public class Menu {
 				Menu.menuDisciplina();
 			}
 		} while (opcao != 0);
+		// menu aluno com acesso as notas dele
 	}
+	
 }
