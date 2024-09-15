@@ -12,7 +12,7 @@ public class _PooApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(_PooApplication.class, args);
-
+/*
 		// •--==> ATRITUBTOS
 		Scanner usuarioLeia = new Scanner(System.in);
 		Scanner senhaLeia = new Scanner(System.in);
@@ -60,26 +60,10 @@ public class _PooApplication {
 					usuarioLogado = clienteLogin;
 					return true;
 				}
-
-				/*
-				 * classes a serem geradas :
-				 * Pessoa: Proprietário , Veterinário ( login e senha ?)
-				 * Procedimentos: Vacinas, Consultas, Procedimento Cirurgico.
-				 * Clínica veterinária : endereco
-				 * Pet
-				 * 
-				 * 
-				 * 
-				 * Ter dois menus : um para o médico e outro para o usuário.
-				 * 
-				 * 
-				 * 
-				 * 
-				 */
-
 			}
 
 		}
 	return false;
+	*/
 	}
 }
