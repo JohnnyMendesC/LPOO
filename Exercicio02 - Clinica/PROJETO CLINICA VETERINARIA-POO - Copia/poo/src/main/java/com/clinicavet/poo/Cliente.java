@@ -1,12 +1,22 @@
 package com.clinicavet.poo;
 
-public class Cliente extends Pessoa {
+import java.util.ArrayList;
 
-private int idCliente;
-private int contadorCliente;
+public class Cliente extends Pessoa {
+// •--==> LISTA DE CLIENTES
+public static ArrayList<Cliente> listaDeAlunos = new ArrayList<Cliente>();
+// •--==> ATRITUBTOS
+//private int idCliente;
 private String dataCadastro;
+
+// •--==> CONSTRUTOR
+
+// •--==> METODOS
+
+// •--==> GETTERS SETTERS
+
 //login e senha 
-//deve consultar os prontuários (historicos de atendimento) de TODOS os pets. 
+//deve consultar os prontuários (historicos de atendimento) de TODOS os SEUS pets. 
 
 
 

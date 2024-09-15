@@ -1,18 +1,22 @@
 package com.clinicavet.poo;
 
-public class Clinicavet {
-    //public Endereco endereco;
-    private String cnpj;
-    private String telefone;
-    private String nome; 
-    //public String MedicoVetResponsavel(?) verificar se coloca isso.
+public class ClinicaVeterinaria {
+
+// •--==> ATRITUBTOS
+
+//public Endereco endereco;
+private String cnpj;
+private String telefone;
+private String nome; 
+//public String MedicoVetResponsavel(?) verificar se coloca isso.
 
 
+// •--==> CONSTRUTOR
 
+// •--==> METODOS
 
-
-
-    public String getCnpj() {
+// •--==> GETTERS SETTERS
+public String getCnpj() {
         return cnpj;
     }
     public void setCnpj(String cnpj) {

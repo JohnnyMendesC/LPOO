@@ -1,6 +1,6 @@
 package com.clinicavet.poo;
 
-public enum StatusConsulta {
+public enum EnumStatusConsulta {
         AGENDADA,
         EM_ANDAMENTO,
         FINALIZADA,

@@ -1,6 +1,6 @@
 package com.clinicavet.poo;
 
-public enum CorPet {
+public enum EnumCorPet {
     FULVO,
     PRETO,
     BRANCO,

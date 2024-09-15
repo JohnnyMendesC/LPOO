@@ -1,6 +1,6 @@
 package com.clinicavet.poo;
 
-public enum EspecieAnimal {
+public enum EnumEspecieAnimal {
     CACHORRO,
     GATO,
     ROEDOR,

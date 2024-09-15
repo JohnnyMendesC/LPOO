@@ -1,12 +1,20 @@
 package com.clinicavet.poo;
 
 public abstract class Animal  {
+// •--==> ATRITUBTOS
+
 
 private String dataNascimento;
-private EspecieAnimal especieAnimal; //esse é um enum
+private EnumEspecieAnimal especieAnimal; //esse é um enum
 private String raca;
-private CorPet cor; // esse é um enum.
+private EnumCorPet cor; // esse é um enum.
+private Cliente donoPet;
 
+// •--==> CONSTRUTOR
+
+// •--==> METODOS
+
+// •--==> GETTERS SETTERS
 
 
 
